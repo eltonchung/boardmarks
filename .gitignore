@@ -1,0 +1,18 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.DS_Store
+test-results/
+playwright-report/
+
+# Local installation copies and generated release packages
+/Boardmarks/
+/Boardmarks */
+/Boardmarks-v*.zip
+/Boardmarks-v*.zip.sha256
+
+# Local environment and logs
+.env
+.env.*
+!.env.example
+*.log

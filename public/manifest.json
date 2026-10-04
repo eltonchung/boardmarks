@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Boardmarks — 書籤工作台",
+  "version": "1.0.10",
+  "description": "以 Space 與 Collection 整理書籤，將開啟的分頁直接收藏。無伺服器、無追蹤。",
+  "minimum_chrome_version": "120",
+  "permissions": ["bookmarks", "tabs", "storage", "favicon"],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnPKqnSF41t3AT7bwvg6t/sTCJkNRTF+q/3maEicXXFXLHmWUAloT2s1E5LcZOF1hLkQDNIbrW+nD1HSv/SxX2LeSskJmC6xJb64QTk/ZZ7uOOVUmhe+AnrKQIs7aU9n6bYcejxDYbYzeMuRfxioUBXDpP0D/7pc5Hgqo2urQ/iVn8ESCZH+3mrSHVP8CxqTn1AgEKkpegsNP+f85OzeLHc9sZgF/6cJ/GGYqy71ry5LF0SD1OSghRfy2h8oPnLwFMijSygKswz6HNf+zJI4hkYN2DT2v5oXC3vUCVBMl4T+RC2xBVB08BRRKhGp8spoJq8GAdGDwtktNObimBQuslwIDAQAB",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

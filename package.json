@@ -1,0 +1,48 @@
+{
+  "name": "boardmarks",
+  "private": true,
+  "version": "1.0.10",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint .",
+    "format": "prettier --write src tests *.json *.md",
+    "test:e2e": "playwright test",
+    "test:preview": "node scripts/smoke-preview.mjs",
+    "package": "npm run build && python3 scripts/package.py"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@playwright/test": "^1.51.0",
+    "@tailwindcss/vite": "^4.0.9",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/chrome": "^0.0.309",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.20.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^15.15.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^4.0.9",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vite": "^6.1.0",
+    "vitest": "^4.1.11"
+  }
+}
